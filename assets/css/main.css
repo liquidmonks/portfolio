@@ -1,0 +1,49 @@
+/* wire frame: ToDo: delete later */
+header,
+main,
+footer {
+    border: 1px solid goldenrod;
+}
+
+
+/* reset */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* element selectors */
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 100vw;
+
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header,
+main,
+footer {
+    padding: 1.5rem;
+}
+
+main {
+    flex-grow: 1;
+    max-width: 80rem;
+}
+
+
+/* classes */
+.mt- {
+    margin-top: 0.75rem;
+}
+
+.pt {
+    margin-top: 1.5rem;
+}
