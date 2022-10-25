@@ -12,6 +12,12 @@ body {
     padding: 0;
 }
 
+/* custom fonts - Poppins */
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
 /* element selectors */
 body {
     display: flex;
