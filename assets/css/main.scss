@@ -67,6 +67,10 @@ body {
                 font-weight: 800;
                 transition: var(--trans);
                 text-transform: uppercase;
+
+                &:hover {
+                    transform: skewX(-10deg);
+                }
             }
         }
     }
