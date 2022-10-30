@@ -90,7 +90,9 @@ textarea {
                 text-transform: uppercase;
                 display: inline-block;
 
+                // special effect that skews the logo text when the user hovers above it
                 &:hover {
+                    // Text is skewed along the horizontal axis by x degrees
                     transform: skewX(-10deg);
                 }
             }
