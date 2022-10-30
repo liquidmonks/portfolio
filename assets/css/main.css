@@ -68,4 +68,5 @@ body {
 }
 .sidebar .navigation .nav-items .nav-item a {
   display: grid;
+  grid-template-columns: 40px 1fr;
 }/*# sourceMappingURL=main.css.map */
