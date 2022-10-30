@@ -81,6 +81,7 @@ body {
                 a {
                     display: grid;
                     grid-template-columns: 40px 1fr;
+                    transition: var(--trans);
                 }
             }
         }
