@@ -41,4 +41,11 @@ body {
   position: fixed;
   border-right: 1px solid var(--color-grey-1);
   transition: var(--trans);
+}
+.sidebar .navigation {
+  height: 100%;
+  padding: 15rem 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }/*# sourceMappingURL=main.css.map */
