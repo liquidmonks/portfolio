@@ -70,4 +70,8 @@ body {
   display: grid;
   grid-template-columns: 40px 1fr;
   transition: var(--trans);
+}
+.sidebar .navigation .nav-items .nav-item a i {
+  display: flex;
+  align-items: center;
 }/*# sourceMappingURL=main.css.map */
