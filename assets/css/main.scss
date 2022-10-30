@@ -9,6 +9,7 @@
 
 /* variable set */
 
+// variable properties for colors to be used through page styling
 :root {
     --color-background: #fbfbfd;
     --color-green-dark: #27ae60;
@@ -28,6 +29,7 @@
 
 /* custom fonts - Poppins */
 
+// font properties pulled from google fonts
 body {
     font-family: 'Poppins', sans-serif;
     background-color: var(--color-background);
@@ -35,13 +37,16 @@ body {
     color: var(--color-grey-4);
 }
 
+// elements display properties for sidebar menu list features
 a,
 button,
 input,
 textarea {
+    // removes styling properties for the following: 
     text-decoration: none;
     outline: none;
     border: none;
+    // inherits styling properties from the body
     font-family: inherit;
     color: inherit;
     font-size: inherit;
@@ -53,14 +58,18 @@ textarea {
 
 /* classes */
 
+// left side of page that includes primary menu list
 .sidebar {
+    // styling for sidebar section
     background-color: var(--color-white);
     height: 100vh;
     width: 390px;
     position: fixed;
     border-right: 1px solid var(--color-grey-1);
+    // transition variable pulled for root variable set
     transition: var(--trans);
 
+    // display styling orientation of primary menu list
     .navigation {
         height: 100%;
         padding: 15rem 5rem;
@@ -68,6 +77,7 @@ textarea {
         flex-direction: column;
         justify-content: space-between;
 
+        // sidebar logo styling properties 
         .logo {
             transition: all .4s ease-in-out;
 
@@ -89,8 +99,10 @@ textarea {
             .nav-item {
                 margin: .8rem 0;
 
+                // sidebar grid layout - columns display styling properties 
                 a {
                     display: grid;
+                    // sets icon to take up x pixels and fill the rest of space by 1 part of the available space (Fr - fractional unit)
                     grid-template-columns: 40px 1fr;
                     transition: var(--trans);
 
@@ -100,7 +112,9 @@ textarea {
                     }
 
                     &:hover {
+                        // text colors change when user hovers over menu
                         color: var(--color-green-light);
+                        // letters flex when user hovers over menu
                         letter-spacing: 3px;
                     }
                 }
