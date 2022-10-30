@@ -11,6 +11,9 @@
 
 // variable properties for colors to be used through page styling
 :root {
+    // color sets for styling sections through the website
+    // var replaces element properties throughout the website
+    // var sets allows dev to define/modify properties in this root toolkit, which makes all var references throughout the styling sheet dynamic
     --color-background: #fbfbfd;
     --color-green-dark: #27ae60;
     --color-green-light: #6bbe92;
@@ -23,13 +26,14 @@
     --color-grey-5: #2a2e35;
     --color-grey-6: #12181b;
     --color-white: #fff;
+    // transformation effects time duration and style for text throughout the website 
     --trans: all .4s ease-in-out;
 }
 
 
 /* custom fonts - Poppins */
 
-// font properties pulled from google fonts
+// font inherits properties from google font api
 body {
     font-family: 'Poppins', sans-serif;
     background-color: var(--color-background);
@@ -62,16 +66,19 @@ textarea {
 .sidebar {
     // styling for sidebar section
     background-color: var(--color-white);
+    // The height of the element is equal to 100% of the viewport height - it will fill up the entire screen height
     height: 100vh;
     width: 390px;
     position: fixed;
+    // vertical border that separates menu sidebar from main section on the right side of the website
     border-right: 1px solid var(--color-grey-1);
-    // transition variable pulled for root variable set
+    // transition variable effect pulled for root variable set
     transition: var(--trans);
 
     // display styling orientation of primary menu list
     .navigation {
         height: 100%;
+        // padding value for top&bottom + right&left of each property
         padding: 15rem 5rem;
         display: flex;
         flex-direction: column;
@@ -86,7 +93,9 @@ textarea {
                 font-size: 3rem;
                 color: var(--color-grey-5);
                 font-weight: 800;
+                // transition effect for text logo in sidebar
                 transition: var(--trans);
+                // define logo text case
                 text-transform: uppercase;
                 display: inline-block;
 
