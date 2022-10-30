@@ -62,4 +62,7 @@ body {
 }
 .sidebar .navigation .logo a:hover {
   transform: skewX(-10deg);
+}
+.sidebar .navigation .nav-items .nav-item {
+  margin: 0.8rem 0;
 }/*# sourceMappingURL=main.css.map */
