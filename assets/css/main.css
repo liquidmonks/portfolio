@@ -71,6 +71,7 @@ textarea {
   font-weight: 800;
   transition: var(--trans);
   text-transform: uppercase;
+  display: inline-block;
 }
 .sidebar .navigation .logo a:hover {
   transform: skewX(-10deg);
