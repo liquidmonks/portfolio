@@ -1,27 +1,18 @@
 /* Universal selector for the website */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    list-style: none;
-    text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
 }
 
 /* wire frame: ToDo: delete later */
-
-
 /* reset */
-
-
 /* custom fonts - Poppins */
-
 body {
-    font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
-
 /* element selectors */
-
-
-
-/* classes */
+/* classes *//*# sourceMappingURL=main.css.map */
