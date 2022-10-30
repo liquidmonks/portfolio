@@ -77,6 +77,10 @@ body {
         .nav-items {
             .nav-item {
                 margin: .8rem 0;
+
+                a {
+                    display: grid;
+                }
             }
         }
     }

@@ -65,4 +65,7 @@ body {
 }
 .sidebar .navigation .nav-items .nav-item {
   margin: 0.8rem 0;
+}
+.sidebar .navigation .nav-items .nav-item a {
+  display: grid;
 }/*# sourceMappingURL=main.css.map */
