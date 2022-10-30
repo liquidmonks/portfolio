@@ -74,4 +74,7 @@ body {
 .sidebar .navigation .nav-items .nav-item a i {
   display: flex;
   align-items: center;
+}
+.sidebar .navigation .nav-items .nav-item a:hover {
+  color: var(--color-green-light);
 }/*# sourceMappingURL=main.css.map */
