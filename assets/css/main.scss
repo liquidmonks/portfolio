@@ -17,6 +17,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
+    background-color: #f8f8f8;
 }
 
 
@@ -25,3 +26,11 @@ body {
 
 
 /* classes */
+
+.sidebar {
+    background-color: white;
+    height: 100vh;
+    width: 390px;
+    position: fixed;
+    border-right: 1px solid red;
+}

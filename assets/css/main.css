@@ -12,7 +12,15 @@
 /* custom fonts - Poppins */
 body {
   font-family: "Poppins", sans-serif;
+  background-color: #f8f8f8;
 }
 
 /* element selectors */
-/* classes *//*# sourceMappingURL=main.css.map */
+/* classes */
+.sidebar {
+  background-color: white;
+  height: 100vh;
+  width: 390px;
+  position: fixed;
+  border-right: 1px solid red;
+}/*# sourceMappingURL=main.css.map */
