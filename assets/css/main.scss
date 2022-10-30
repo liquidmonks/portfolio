@@ -35,6 +35,17 @@ body {
     color: var(--color-grey-4);
 }
 
+a,
+button,
+input,
+textarea {
+    text-decoration: none;
+    outline: none;
+    border: none;
+    font-family: inherit;
+    color: inherit;
+    font-size: inherit;
+}
 
 /* element selectors */
 
