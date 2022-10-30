@@ -56,5 +56,17 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+
+        .logo {
+            transition: all .4s ease-in-out;
+
+            a {
+                letter-spacing: 3px;
+                font-size: 3rem;
+                color: var(--color-grey-5);
+                font-weight: 800;
+                transition: var(--trans);
+            }
+        }
     }
 }

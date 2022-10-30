@@ -48,4 +48,14 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+.sidebar .navigation .logo {
+  transition: all 0.4s ease-in-out;
+}
+.sidebar .navigation .logo a {
+  letter-spacing: 3px;
+  font-size: 3rem;
+  color: var(--color-grey-5);
+  font-weight: 800;
+  transition: var(--trans);
 }/*# sourceMappingURL=main.css.map */
