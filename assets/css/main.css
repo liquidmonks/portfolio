@@ -91,4 +91,37 @@ textarea {
 .sidebar .navigation .nav-items .nav-item a:hover {
   color: var(--color-green-light);
   letter-spacing: 3px;
+}
+
+.header {
+  background-color: var(--color-grey-0);
+  height: 100vh;
+  margin-left: 390px;
+  position: relative;
+  overflow-x: hidden;
+}
+.header .header-content {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+}
+.header .header-content .h-text h2 {
+  font-size: 2rem;
+  text-align: center;
+}
+.header .header-content .h-text p {
+  margin: 2rem 0;
+  font-size: 19px;
+  font-weight: 500;
+  text-align: center;
+}
+.header .header-content .h-image {
+  display: flex;
+  justify-content: center;
+}
+.header .header-content .h-image img {
+  width: 300px;
+  border-radius: 50%;
 }/*# sourceMappingURL=main.css.map */

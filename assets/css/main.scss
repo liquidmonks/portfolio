@@ -140,8 +140,10 @@ textarea {
     // stylization properties for the primary header
     background-color: var(--color-grey-0);
     height: 100vh;
+    // spacing to compensate for the side bar which is set at 390px
     margin-left: 390px;
     position: relative;
+    // set overflow to hidden to allow for animations
     overflow-x: hidden;
 
     // sub-class for header content to stylize the image and text
@@ -158,7 +160,7 @@ textarea {
         // sub-class to stylize the header text properties
         .h-text {
             h2 {
-                font-size: 2.5rem;
+                font-size: 2rem;
                 text-align: center;
             }
 
