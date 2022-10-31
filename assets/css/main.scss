@@ -155,7 +155,7 @@ textarea {
         // resize image to fit inside of page viewport
         width: 80%;
 
-        // sub-class to stylize the header text
+        // sub-class to stylize the header text properties
         .h-text {
             h2 {
                 font-size: 2.5rem;
@@ -168,6 +168,17 @@ textarea {
                 font-size: 19px;
                 font-weight: 500;
                 text-align: center;
+            }
+        }
+
+        // sub-class to stylize image properties
+        .h-image {
+            display: flex;
+            justify-content: center;
+
+            img {
+                width: 300px;
+                border-radius: 50%;
             }
         }
     }
