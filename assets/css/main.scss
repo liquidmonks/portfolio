@@ -146,11 +146,29 @@ textarea {
 
     // sub-class for header content to stylize the image and text
     .header-content {
-        // stylization to bring primary image and text to center of the page.
+        // sub-class stylization to bring primary image and text to center of the page.
         position: absolute;
         left: 50%;
         top: 50%;
         // centers the text above the image
-        transform: translate(-50%, -50%)
+        transform: translate(-50%, -50%);
+        // resize image to fit inside of page viewport
+        width: 80%;
+
+        // sub-class to stylize the header text
+        .h-text {
+            h2 {
+                font-size: 2.5rem;
+                text-align: center;
+            }
+
+            // stylize the paragraph tag top&bottom and left&right
+            p {
+                margin: 2rem 0;
+                font-size: 19px;
+                font-weight: 500;
+                text-align: center;
+            }
+        }
     }
 }
