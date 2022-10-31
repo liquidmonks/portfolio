@@ -187,4 +187,14 @@ textarea {
 }
 
 // mouse element effect
-.mouse {}
+.mouse {
+    position: absolute;
+    left: 50%;
+    bottom: 2%;
+    transform: translate(-50%, -50%);
+    width: 2rem;
+    height: 2.8rem;
+    background-color: var(--color-grey-4);
+    border-radius: 20px;
+    border: 2px solid var(--color-grey-4);
+}
