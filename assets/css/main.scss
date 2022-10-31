@@ -141,6 +141,15 @@ textarea {
     background-color: var (--color-grey-0);
     height: 100vh;
     margin-left: 390px;
-    position-relative;
-    overflow-x: ;
+    position: relative;
+    overflow-x: hidden;
+
+    // sub-class for header content to stylize the image and text
+    .header-content {
+        // stylization to bring primary image and text to center of the page.
+        position: absolute;
+        left: 50%;
+        top: 50%;
+
+    }
 }
