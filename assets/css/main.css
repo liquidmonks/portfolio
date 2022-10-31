@@ -138,4 +138,11 @@ textarea {
 }
 .mouse .dot {
   background-color: var(--color-grey-4);
+  height: 7px;
+  width: 7px;
+  border-radius: 50%;
+  left: 50%;
+  top: 6px;
+  transform: translate(-50%, -50%);
+  position: absolute;
 }/*# sourceMappingURL=main.css.map */
