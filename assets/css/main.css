@@ -145,4 +145,34 @@ textarea {
   top: 6px;
   transform: translate(-50%, -50%);
   position: absolute;
+  -webkit-animation: dot 1s infinite ease-in-out;
+          animation: dot 1s infinite ease-in-out;
+}
+@-webkit-keyframes dot {
+  0% {
+    transform: translate(-50%, -50%);
+  }
+  10% {
+    transform: translate(-50%, -50%);
+  }
+  50% {
+    transform: translate(-50%, 25px);
+  }
+  100% {
+    transform: translate(-50%, -50%);
+  }
+}
+@keyframes dot {
+  0% {
+    transform: translate(-50%, -50%);
+  }
+  10% {
+    transform: translate(-50%, -50%);
+  }
+  50% {
+    transform: translate(-50%, 25px);
+  }
+  100% {
+    transform: translate(-50%, -50%);
+  }
 }/*# sourceMappingURL=main.css.map */
