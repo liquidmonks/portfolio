@@ -172,22 +172,27 @@ textarea {
   font-size: 3rem;
   margin-bottom: 6rem;
 }
-.sec-projects .projects-content .project {
+.sec-projects .projects-content .projects {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-gap: 2rem;
+}
+.sec-projects .projects-content .projects .project {
   position: relative;
 }
-.sec-projects .projects-content .project img {
+.sec-projects .projects-content .projects .project img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 7px;
 }
-.sec-projects .projects-content .project .text {
+.sec-projects .projects-content .projects .project .text {
   position: absolute;
   bottom: 5%;
   left: 5%;
 }
-.sec-projects .projects-content .project .text h5 {
+.sec-projects .projects-content .projects .project .text h5 {
   letter-spacing: 3px;
   font-size: 2rem;
   background-color: var(--color-green-dark);
@@ -195,13 +200,13 @@ textarea {
   border-radius: 7px;
   color: var(--color-white);
 }
-.sec-projects .projects-content .project .text p {
+.sec-projects .projects-content .projects .project .text p {
   font-weight: 500;
   color: var(--color-grey-0);
   margin-bottom: 0.5rem;
   margin-top: 0.5rem;
 }
-.sec-projects .projects-content .project .project-btn {
+.sec-projects .projects-content .projects .project .project-btn {
   border-radius: initial;
   padding: 0.8rem 2rem;
   background-color: rgba(255, 255, 255, 0.35);
@@ -209,10 +214,10 @@ textarea {
   transition: var(--trans);
   position: relative;
 }
-.sec-projects .projects-content .project .project-btn:hover {
+.sec-projects .projects-content .projects .project .project-btn:hover {
   background-color: rgba(255, 255, 255, 0.7);
 }
-.sec-projects .projects-content .project .project-btn::after {
+.sec-projects .projects-content .projects .project .project-btn::after {
   content: "";
   position: absolute;
   left: 0;
