@@ -152,6 +152,16 @@ textarea {
   transition: var(--trans);
   filter: grayscale(100);
 }
+.sec-about .about-content .right-about h4 {
+  font-size: 3.5rem;
+}
+.sec-about .about-content .right-about h4 span {
+  color: var(--color-green-dark);
+  position: relative;
+}
+.sec-about .about-content .right-about p {
+  margin: 1.5rem 0;
+}
 
 .main-title {
   text-align: center;
@@ -215,4 +225,17 @@ textarea {
   100% {
     transform: translate(-50%, -50%);
   }
+}
+
+.btn {
+  display: inline-block;
+  font-weight: 500;
+  color: var(--color-white);
+  background-color: var(--color-grey-5);
+  padding: 1rem 2rem;
+  border-radius: 7px;
+  transition: var(--trans);
+}
+.btn:hover {
+  background-color: var(--color-green-dark);
 }/*# sourceMappingURL=main.css.map */

@@ -223,6 +223,25 @@ textarea {
                 filter: grayscale(100);
             }
         }
+
+        .right-about {
+
+            // stylization properties for the h4 tag
+            h4 {
+                font-size: 3.5rem;
+
+                // stylization properties for the span tag - adds colors to part of the h4 header title
+                span {
+                    color: var(--color-green-dark);
+                    position: relative;
+                }
+            }
+
+            p {
+                // margins set for top and bottom and no margins at the top
+                margin: 1.5rem 0;
+            }
+        }
     }
 }
 
@@ -244,7 +263,7 @@ textarea {
     }
 }
 
-// mouse element effect
+// scrolling mouse element effect class
 .mouse {
     position: absolute;
     left: 50%;
@@ -291,5 +310,22 @@ textarea {
             }
 
         }
+    }
+}
+
+// clickable button component class
+.btn {
+    // styling properties for the clickable buttons
+    display: inline-block;
+    font-weight: 500;
+    color: var(--color-white);
+    background-color: var(--color-grey-5);
+    padding: 1rem 2rem;
+    border-radius: 7px;
+    transition: var(--trans);
+
+    // mouse hover transition effect
+    &:hover {
+        background-color: var(--color-green-dark);
     }
 }
