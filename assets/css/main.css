@@ -132,6 +132,27 @@ textarea {
   padding: 4rem 5rem;
 }
 
+.sec-about .about-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.sec-about .about-content .left-about {
+  width: 94%;
+  transition: var(--trans);
+}
+.sec-about .about-content .left-about:hover img {
+  filter: grayscale(0);
+  cursor: pointer;
+}
+.sec-about .about-content .left-about img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 7px;
+  transition: var(--trans);
+  filter: grayscale(100);
+}
+
 .main-title {
   text-align: center;
   margin: 3rem 0;

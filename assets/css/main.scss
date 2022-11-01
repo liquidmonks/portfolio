@@ -194,6 +194,38 @@ textarea {
     padding: 4rem 5rem;
 }
 
+// stylization properties and values for the about section
+.sec-about {
+    .about-content {
+        // display grid to separate image and text columns
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        // image section of the about section
+        .left-about {
+            width: 94%;
+            // animation effect transition that removes the image grayscale filter when the user hovers over the image
+            transition: var(--trans);
+
+            &:hover img {
+                filter: grayscale(0);
+                // generates a cursor image pointer when user hovers over the mouse
+                cursor: pointer;
+            }
+
+            img {
+                // image fills the entire content area, but does not stretch beyond it
+                width: 100%;
+                object-fit: cover;
+                border-radius: 7px;
+                // animation effect that starts image in grayscale using a grayscale filter when the user hovers over the image
+                transition: var(--trans);
+                filter: grayscale(100);
+            }
+        }
+    }
+}
+
 // about us section
 .main-title {
     // styling parameters for about section chunks
