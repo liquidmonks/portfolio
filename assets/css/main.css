@@ -191,6 +191,12 @@ textarea {
   border-radius: 7px;
   color: var(--color-white);
 }
+.sec-projects .projects-content .project .text p {
+  font-weight: 500;
+  color: var(--color-grey-0);
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+}
 
 .main-title {
   text-align: center;

@@ -280,6 +280,14 @@ textarea {
                     border-radius: 7px;
                     color: var(--color-white);
                 }
+
+                p {
+                    // stylization properties and values for description text
+                    font-weight: 500;
+                    color: var(--color-grey-0);
+                    margin-bottom: .5rem;
+                    margin-top: .5rem;
+                }
             }
         }
     }
