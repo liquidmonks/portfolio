@@ -168,6 +168,10 @@ textarea {
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 2rem;
 }
+.sec-projects .projects-content .p-title {
+  font-size: 3rem;
+  margin-bottom: 6rem;
+}
 .sec-projects .projects-content .project {
   position: relative;
 }

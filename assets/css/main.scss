@@ -254,6 +254,12 @@ textarea {
         // separation gap between the two columns that separates the individual projects
         grid-gap: 2rem;
 
+        // title that appears above project image
+        .p-title {
+            font-size: 3rem;
+            margin-bottom: 6rem;
+        }
+
         .project {
             // individual project grid style properties and values
             position: relative;
