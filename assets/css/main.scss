@@ -186,6 +186,32 @@ textarea {
     }
 }
 
+// website sections
+.section {
+    background-color: var(--color-grey-0);
+    margin-left: 390px;
+    // padding top/bottom and left/right
+    padding: 4rem 5rem;
+}
+
+// about us section
+.main-title {
+    // styling parameters for about section chunks
+    text-align: center;
+    // leaves space at top and bottom, left and right - none
+    margin: 3rem 0;
+
+    h3 {
+        font-size: 2.5rem;
+        text-transform: uppercase;
+    }
+
+    span {
+        text-align: center;
+        display: inline-block;
+    }
+}
+
 // mouse element effect
 .mouse {
     position: absolute;
@@ -233,23 +259,5 @@ textarea {
             }
 
         }
-    }
-}
-
-// about us section
-.main-title {
-    // styling parameters for about section chunks
-    text-align: center;
-    // leaves space at top and bottom, left and right - none
-    margin: 3rem 0;
-
-    h3 {
-        font-size: 2.5rem;
-        text-transform: uppercase;
-    }
-
-    span {
-        text-align: center;
-        display: inline-block;
     }
 }

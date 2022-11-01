@@ -126,6 +126,25 @@ textarea {
   border-radius: 25%;
 }
 
+.section {
+  background-color: var(--color-grey-0);
+  margin-left: 390px;
+  padding: 4rem 5rem;
+}
+
+.main-title {
+  text-align: center;
+  margin: 3rem 0;
+}
+.main-title h3 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+.main-title span {
+  text-align: center;
+  display: inline-block;
+}
+
 .mouse {
   position: absolute;
   left: 50%;
@@ -175,17 +194,4 @@ textarea {
   100% {
     transform: translate(-50%, -50%);
   }
-}
-
-.main-title {
-  text-align: center;
-  margin: 3rem 0;
-}
-.main-title h3 {
-  font-size: 2.5rem;
-  text-transform: uppercase;
-}
-.main-title span {
-  text-align: center;
-  display: inline-block;
 }/*# sourceMappingURL=main.css.map */
