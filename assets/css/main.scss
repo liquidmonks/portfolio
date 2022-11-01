@@ -265,6 +265,22 @@ textarea {
                 object-fit: cover;
                 border-radius: 7px;
             }
+
+            // stylization properties and values for the text within the image
+            .text {
+                position: absolute;
+                bottom: 5%;
+                left: 5%;
+
+                h5 {
+                    letter-spacing: 3px;
+                    font-size: 2rem;
+                    background-color: var(--color-green-dark);
+                    padding: .2rem .4rem;
+                    border-radius: 7px;
+                    color: var(--color-white);
+                }
+            }
         }
     }
 }

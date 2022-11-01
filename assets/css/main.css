@@ -178,6 +178,19 @@ textarea {
      object-fit: cover;
   border-radius: 7px;
 }
+.sec-projects .projects-content .project .text {
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+}
+.sec-projects .projects-content .project .text h5 {
+  letter-spacing: 3px;
+  font-size: 2rem;
+  background-color: var(--color-green-dark);
+  padding: 0.2rem 0.4rem;
+  border-radius: 7px;
+  color: var(--color-white);
+}
 
 .main-title {
   text-align: center;
