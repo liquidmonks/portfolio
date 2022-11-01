@@ -197,6 +197,26 @@ textarea {
   margin-bottom: 0.5rem;
   margin-top: 0.5rem;
 }
+.sec-projects .projects-content .project .project-btn {
+  border-radius: initial;
+  padding: 0.8rem 2rem;
+  background-color: rgba(255, 255, 255, 0.35);
+  color: var(--color-white);
+  transition: var(--trans);
+  position: relative;
+}
+.sec-projects .projects-content .project .project-btn:hover {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+.sec-projects .projects-content .project .project-btn::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  background-color: var(--color-white);
+  width: 100%;
+  height: 2px;
+  bottom: -6px;
+}
 
 .main-title {
   text-align: center;
