@@ -36,7 +36,7 @@
 // font inherits properties from google font api
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: var(--color-background);
+    background-color: var(--color-grey-4);
     font-size: 17px;
     color: var(--color-grey-4);
 }
@@ -233,5 +233,23 @@ textarea {
             }
 
         }
+    }
+}
+
+// about us section
+.main-title {
+    // styling parameters for about section chunks
+    text-align: center;
+    // leaves space at top and bottom, left and right - none
+    margin: 3rem 0;
+
+    h3 {
+        font-size: 2.5rem;
+        text-transform: uppercase;
+    }
+
+    span {
+        text-align: center;
+        display: inline-block;
     }
 }
