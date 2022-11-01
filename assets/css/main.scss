@@ -245,6 +245,30 @@ textarea {
     }
 }
 
+.sec-projects {
+
+    // stylization properties and values for project sections.
+    .projects-content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        // separation gap between the two columns that separates the individual projects
+        grid-gap: 2rem;
+
+        .project {
+            // individual project grid style properties and values
+            position: relative;
+
+            img {
+                width: 100%;
+                height: 100%;
+                // contains project image within the grid content area
+                object-fit: cover;
+                border-radius: 7px;
+            }
+        }
+    }
+}
+
 // about us section
 .main-title {
     // styling parameters for about section chunks
