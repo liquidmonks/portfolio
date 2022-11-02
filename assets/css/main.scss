@@ -334,6 +334,18 @@ textarea {
     }
 }
 
+// stylization properties and values for services section
+
+.sec-services {
+
+    //  primary services stylization container
+    .services {
+        // responsive grid layout with minimum width that occupies unfilled space
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    }
+}
+
 // about us section
 .main-title {
     // styling parameters for about section chunks
