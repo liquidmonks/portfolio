@@ -341,10 +341,37 @@
             </div>
             <div class="contact-content">
                 <!-- Embed map from Google Maps - does not include width and heigh properties -->
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2969.955161645941!2d-87.62980958411342!3d41.893821379221!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2ded62266bdf%3A0x1d82cbde6cbab11e!2sLiquid%20Monks!5e0!3m2!1sen!2sus!4v1667408399337!5m2!1sen!2sus"
-                    style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2969.955161645941!2d-87.62980958411342!3d41.893821379221!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2ded62266bdf%3A0x1d82cbde6cbab11e!2sLiquid%20Monks!5e0!3m2!1sen!2sus!4v1667408399337!5m2!1sen!2sus"
+                        style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <!-- Input form with no action properties located on right-half of the contacts area -->
+                <form class="form">
+                    <h3 class="contact-us">Send us a message</h3>
+                    <p class="c-text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, expedita?
+                    </p>
+                    <div class="input-container">
+                        <label for="name">Enter Your Name</label>
+                        <input type="text" name="name" id="name">
+                    </div>
+                    <div class="input-container">
+                        <label for="email">Enter Your Email</label>
+                        <input type="text" name="email" id="email">
+                    </div>
+                    <div class="input-container">
+                        <label for="subject">Enter Your Subject</label>
+                        <input type="text" name="subject" id="subject">
+                    </div>
+                    <div class="input-container">
+                        <label for="textarea">Message</label>
+                        <textarea name="textarea" id="textarea" cols="30" rows="6"></textarea>
+                    </div>
+                    <!-- Submit button inherits button attributes -->
+                    <button type="submit" class="btn btn-submit">Send Message</button>
+                </form>
             </div>
         </section>
 
