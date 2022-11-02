@@ -703,3 +703,56 @@ body::-webkit-scrollbar-thumb:hover {
         background-color: var(--color-green-dark);
     }
 }
+
+// Media Queries to make the website responsive
+@media screen and (max-width: 1405px) {
+    .sidebar {
+        width: 100%;
+        z-index: 10; // makes the background space fill the top area
+        bottom: 0;
+        height: 10vh;
+        overflow: hidden; // prevents a collapse page from overlapping the parent
+
+        .navigation {
+            padding: 0;
+
+            .logo {
+                display: none;
+            }
+
+            footer {
+                display: none;
+            }
+
+            .nav-items {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 100%;
+
+                // stylize the sidebar to drop nav items to the bottom of the page when page collapses
+                a {
+                    margin: 0 2rem;
+                    background-color: var(--color-grey-1);
+                    position: relative;
+                    width: 60px;
+                    height: 60px;
+
+                    span {
+                        display: none;
+                    }
+
+                    // increases the font sizes when the page size narrows
+                    i {
+                        font-size: 1.5rem;
+                        position: absolute;
+                        left: 50%;
+                        top: 50%;
+                        transform: translate(-50%, -50%);
+                    }
+                }
+            }
+        }
+
+    }
+}

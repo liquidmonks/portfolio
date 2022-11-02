@@ -556,4 +556,46 @@ body::-webkit-scrollbar-thumb:hover {
 }
 .btn:hover {
   background-color: var(--color-green-dark);
+}
+
+@media screen and (max-width: 1405px) {
+  .sidebar {
+    width: 100%;
+    z-index: 10;
+    bottom: 0;
+    height: 10vh;
+    overflow: hidden;
+  }
+  .sidebar .navigation {
+    padding: 0;
+  }
+  .sidebar .navigation .logo {
+    display: none;
+  }
+  .sidebar .navigation footer {
+    display: none;
+  }
+  .sidebar .navigation .nav-items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+  .sidebar .navigation .nav-items a {
+    margin: 0 2rem;
+    background-color: var(--color-grey-1);
+    position: relative;
+    width: 60px;
+    height: 60px;
+  }
+  .sidebar .navigation .nav-items a span {
+    display: none;
+  }
+  .sidebar .navigation .nav-items a i {
+    font-size: 1.5rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
 }/*# sourceMappingURL=main.css.map */
