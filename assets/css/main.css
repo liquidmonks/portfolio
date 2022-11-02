@@ -598,4 +598,7 @@ body::-webkit-scrollbar-thumb:hover {
     top: 50%;
     transform: translate(-50%, -50%);
   }
+  .header {
+    margin-left: 0;
+  }
 }/*# sourceMappingURL=main.css.map */
