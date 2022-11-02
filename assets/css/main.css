@@ -289,6 +289,7 @@ textarea {
 .sec-news .news-content .news-item {
   position: relative;
   height: 500px;
+  cursor: pointer;
 }
 .sec-news .news-content .news-item .news-text {
   position: absolute;

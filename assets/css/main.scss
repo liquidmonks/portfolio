@@ -420,6 +420,7 @@ textarea {
         .news-item {
             position: relative;
             height: 500px;
+            cursor: pointer; // Shows cursor animation when cursor hovers over the content area
 
             // stylization properties and values for text within the news item
             .news-text {
