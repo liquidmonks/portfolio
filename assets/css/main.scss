@@ -485,6 +485,13 @@ textarea {
     .contact-content {
         display: grid;
         grid-template-columns: repeat(2, 1fr); //contacts section is split into two halves; left = map, right = contact form
+
+        // stylization properties and values for the map
+        iframe {
+            width: 100%;
+            border-radius: 7px;
+            height: 100%;
+        }
     }
 }
 

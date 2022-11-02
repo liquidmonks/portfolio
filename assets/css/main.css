@@ -334,6 +334,11 @@ textarea {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
+.sec-contact .contact-content iframe {
+  width: 100%;
+  border-radius: 7px;
+  height: 100%;
+}
 
 .main-title {
   text-align: center;
