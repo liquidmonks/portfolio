@@ -230,6 +230,36 @@ textarea {
 .sec-services .services {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  grid-gap: 2rem;
+}
+.sec-services .services .service {
+  background-color: var(--color-white);
+  border-radius: 7px;
+}
+.sec-services .services .service .s-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+.sec-services .services .service .s-content p {
+  text-align: center;
+}
+.sec-services .services .service .s-content h5 {
+  margin: 1.5rem;
+  font-size: 1.6rem;
+}
+.sec-services .services .service .s-content .icon {
+  width: 110px;
+  height: 110px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.sec-services .services .service .s-content i {
+  font-size: 3rem;
+  color: var(--color-grey-4);
 }
 
 .main-title {
