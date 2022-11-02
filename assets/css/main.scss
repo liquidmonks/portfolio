@@ -793,9 +793,18 @@ body::-webkit-scrollbar-thumb:hover {
     }
 }
 
-// Media queries for responsive display in projects field area
+// Media queries for responsive display in section field area
 @media screen and (max-width: 843px) {
     .section {
         padding: 4rem 2.5rem;
+    }
+}
+
+// Media queries for responsive display in projects section field area
+@media screen and (max-width: 745px) {
+    .sec-projects {
+        .projects-content {
+            grid-template-columns: 1fr;
+        }
     }
 }
