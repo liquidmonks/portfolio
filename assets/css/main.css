@@ -286,6 +286,45 @@ textarea {
   border-radius: 7px;
   height: 100%;
 }
+.sec-news .news-content .news-item {
+  position: relative;
+  height: 500px;
+}
+.sec-news .news-content .news-item .news-text {
+  position: absolute;
+  background-color: var(--color-grey-0);
+  transform: translate(-50%, -50%);
+  width: 94%;
+  height: 96%;
+  left: 50%;
+  top: 50%;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: var(--trans);
+}
+.sec-news .news-content .news-item .news-text .text-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 2rem, 3rem;
+}
+.sec-news .news-content .news-item .news-text .text-content .top {
+  align-self: flex-end;
+  font-size: 2.5rem;
+}
+.sec-news .news-content .news-item .news-text .text-content .bottom p {
+  padding-bottom: 0.4rem;
+  font-weight: 500;
+}
+.sec-news .news-content .news-item .news-text .text-content .bottom a {
+  font-size: 1.5rem;
+  font-weight: 700;
+  transition: var(--trans);
+}
+.sec-news .news-content .news-item .news-text .text-content .bottom a:hover {
+  color: var(--color-green-dark);
+}
 
 .main-title {
   text-align: center;

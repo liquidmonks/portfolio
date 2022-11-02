@@ -416,6 +416,59 @@ textarea {
             height: 100%;
         }
 
+        // stylization properties and values for individual news item
+        .news-item {
+            position: relative;
+            height: 500px;
+
+            // stylization properties and values for text within the news item
+            .news-text {
+                position: absolute;
+                background-color: var(--color-grey-0);
+                transform: translate(-50%, -50%); // Centers text within the news item container
+                width: 94%;
+                height: 96%;
+                left: 50%;
+                top: 50%;
+                border-radius: 7px;
+                cursor: pointer; // Displays the mouse cursor when pointing over the element
+                transition: var(--trans);
+
+                // stylization properties and values for the text content
+                .text-content {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    height: 100%;
+                    padding: 2rem, 3rem; // Top & bottom and left & right padding from within the top & side edges inside the border
+
+                    // stylization properties and values for the top icons inside of the news container
+                    .top {
+                        align-self: flex-end;
+                        font-size: 2.5rem;
+                    }
+
+                    // stylization properties and values for the bottom text area inside of the news container
+                    .bottom {
+                        p {
+                            padding-bottom: .4rem;
+                            font-weight: 500;
+                        }
+
+                        a {
+                            font-size: 1.5rem;
+                            font-weight: 700;
+                            transition: var(--trans);
+
+                            &:hover {
+                                color: var(--color-green-dark);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
     }
 }
 
