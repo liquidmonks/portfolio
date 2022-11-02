@@ -604,4 +604,20 @@ body::-webkit-scrollbar-thumb:hover {
   .section {
     margin-left: 0;
   }
+  .sec-contact {
+    padding-bottom: 8rem;
+  }
+}
+@media screen and (max-width: 903px) {
+  .sec-contact .contact-content {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .sec-contact .contact-content .map iframe {
+    height: 500px;
+  }
+}
+@media screen and (max-width: 903px) {
+  .sec-about .about-content {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }/*# sourceMappingURL=main.css.map */

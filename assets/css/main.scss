@@ -763,4 +763,32 @@ body::-webkit-scrollbar-thumb:hover {
     .section {
         margin-left: 0;
     }
+
+    .sec-contact {
+        padding-bottom: 8rem;
+    }
+}
+
+// Media queries for responsive display in contact field area
+@media screen and (max-width: 903px) {
+    .sec-contact {
+        .contact-content {
+            grid-template-columns: repeat(1, 1fr);
+
+            .map {
+                iframe {
+                    height: 500px;
+                }
+            }
+        }
+    }
+}
+
+// Media queries for responsive display in about field area
+@media screen and (max-width: 903px) {
+    .sec-about {
+        .about-content {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
 }
