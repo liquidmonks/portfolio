@@ -104,6 +104,30 @@ body::-webkit-scrollbar-thumb:hover {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  -webkit-animation: navAnim 0.9s ease-in-out;
+          animation: navAnim 0.9s ease-in-out;
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+@-webkit-keyframes navAnim {
+  0% {
+    transform: translateY(-100%) scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0) scale(1);
+    opacity: 1;
+  }
+}
+@keyframes navAnim {
+  0% {
+    transform: translateY(-100%) scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0) scale(1);
+    opacity: 1;
+  }
 }
 .sidebar .navigation .logo {
   transition: all 0.4s ease-in-out;

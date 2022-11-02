@@ -124,6 +124,21 @@ body::-webkit-scrollbar-thumb:hover {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        // navigation animation 
+        animation: navAnim .9s ease-in-out;
+        animation-delay: .6s;
+
+        @keyframes navAnim {
+            0% {
+                transform: translateY(-100%) scale(0); // sets navigation menus offscreen before the sidebar slides in
+                opacity: 0;
+            }
+
+            100% {
+                transform: translate(0) scale(1); // sets navigation menus to drop in after the sidebar slides in
+                opacity: 1;
+            }
+        }
 
         // sidebar logo styling properties 
         .logo {
