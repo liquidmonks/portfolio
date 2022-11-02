@@ -373,11 +373,26 @@ textarea {
                     align-items: center;
                     justify-content: center;
                     position: relative;
-                }
+                    // Rounded border around the icon
+                    border: 1px solid var(--color-grey-2);
+                    border-radius: 50%;
 
-                i {
-                    font-size: 3rem;
-                    color: var(--color-grey-4);
+                    i {
+                        font-size: 3rem;
+                        color: var(--color-grey-4);
+                    }
+
+                    // pseudo element when mouse hovers over the icon border
+                    &::after {
+                        content: ''; //empty string ''
+                        position: absolute;
+                        background-color: var(--color-grey-2);
+                        top: -7px;
+                        // round pseudo element requires width size = height size 
+                        width: 14px;
+                        height: 14px;
+                        border-radius: 50%; //rounds out the corner edges of the box
+                    }
                 }
             }
         }

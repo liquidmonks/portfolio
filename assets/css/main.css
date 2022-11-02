@@ -256,10 +256,21 @@ textarea {
   align-items: center;
   justify-content: center;
   position: relative;
+  border: 1px solid var(--color-grey-2);
+  border-radius: 50%;
 }
-.sec-services .services .service .s-content i {
+.sec-services .services .service .s-content .icon i {
   font-size: 3rem;
   color: var(--color-grey-4);
+}
+.sec-services .services .service .s-content .icon::after {
+  content: "";
+  position: absolute;
+  background-color: var(--color-grey-2);
+  top: -7px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
 }
 
 .main-title {
