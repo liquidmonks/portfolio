@@ -630,4 +630,7 @@ body::-webkit-scrollbar-thumb:hover {
   .sec-projects .projects-content {
     grid-template-columns: 1fr;
   }
+  .sec-projects .projects-content .left-projects .p-title {
+    margin-bottom: 3rem;
+  }
 }/*# sourceMappingURL=main.css.map */

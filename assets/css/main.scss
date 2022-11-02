@@ -805,6 +805,12 @@ body::-webkit-scrollbar-thumb:hover {
     .sec-projects {
         .projects-content {
             grid-template-columns: 1fr;
+
+            .left-projects {
+                .p-title {
+                    margin-bottom: 3rem; // reduces padding between the title and projects image
+                }
+            }
         }
     }
 }
