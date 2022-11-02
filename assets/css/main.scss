@@ -60,6 +60,29 @@ textarea {
     font-size: inherit;
 }
 
+// custom scroll bar
+body::-webkit-scrollbar {
+    width: 7px;
+}
+
+// custom scrollbar track
+body::-webkit-scrollbar-track {
+    width: 7px; // sets thickness of the scrollbar track
+    background-color: var(--color-grey-2);
+}
+
+// custom scrollbar thumb
+body::-webkit-scrollbar-thumb {
+    background-color: var(--color-grey-4);
+    border-radius: 7px;
+}
+
+// custom scrollbar thumb hover
+body::-webkit-scrollbar-thumb:hover {
+    background-color: var(--color-grey-5);
+
+}
+
 /* element selectors */
 
 
