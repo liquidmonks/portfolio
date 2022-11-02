@@ -75,8 +75,8 @@ body::-webkit-scrollbar-thumb:hover {
   position: fixed;
   border-right: 1px solid var(--color-grey-1);
   transition: var(--trans);
-  -webkit-animation: slideAnim 1s ease-in-out;
-          animation: slideAnim 1s ease-in-out;
+  -webkit-animation: slideAnim 1s cubic-bezier(1, -0.14, 0.6, 1.03);
+          animation: slideAnim 1s cubic-bezier(1, -0.14, 0.6, 1.03);
 }
 @-webkit-keyframes slideAnim {
   0% {
