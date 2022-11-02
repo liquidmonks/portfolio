@@ -399,6 +399,26 @@ textarea {
     }
 }
 
+// stylization properties and values for news section
+
+.sec-news {
+    .news-content {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(330px, 1fr)); // All grid content area will have equal size
+        grid-gap: 2rem; // Sets gap between the green
+        position: relative; // Relative size for container allows inner content with hover effect to be absolute
+
+        // image within the blog content
+        img {
+            width: 100%; // to cover the entire grid item
+            object-fit: cover; // keeps the image within the container
+            border-radius: 7px;
+            height: 100%;
+        }
+
+    }
+}
+
 // about us section
 .main-title {
     // styling parameters for about section chunks

@@ -273,6 +273,20 @@ textarea {
   border-radius: 50%;
 }
 
+.sec-news .news-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+  grid-gap: 2rem;
+  position: relative;
+}
+.sec-news .news-content img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 7px;
+  height: 100%;
+}
+
 .main-title {
   text-align: center;
   margin: 3rem 0;
