@@ -293,7 +293,7 @@ textarea {
 .sec-news .news-content .news-item .news-text {
   position: absolute;
   background-color: var(--color-grey-0);
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(0);
   width: 94%;
   height: 96%;
   left: 50%;
@@ -324,6 +324,9 @@ textarea {
 }
 .sec-news .news-content .news-item .news-text .text-content .bottom a:hover {
   color: var(--color-green-dark);
+}
+.sec-news .news-content .news-item:hover .news-text {
+  transform: translate(-50%, -50%) scale(1);
 }
 
 .main-title {

@@ -425,7 +425,7 @@ textarea {
             .news-text {
                 position: absolute;
                 background-color: var(--color-grey-0);
-                transform: translate(-50%, -50%); // Centers text within the news item container
+                transform: translate(-50%, -50%) scale(0); // Centers text within the news item container and hides inner container
                 width: 94%;
                 height: 96%;
                 left: 50%;
@@ -465,6 +465,12 @@ textarea {
                             }
                         }
                     }
+                }
+            }
+
+            &:hover {
+                .news-text {
+                    transform: translate(-50%, -50%) scale(1);
                 }
             }
         }
