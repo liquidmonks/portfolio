@@ -785,10 +785,17 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 // Media queries for responsive display in about field area
-@media screen and (max-width: 903px) {
+@media screen and (max-width: 1036px) {
     .sec-about {
         .about-content {
             grid-template-columns: repeat(1, 1fr);
         }
+    }
+}
+
+// Media queries for responsive display in projects field area
+@media screen and (max-width: 843px) {
+    .section {
+        padding: 4rem 2.5rem;
     }
 }
