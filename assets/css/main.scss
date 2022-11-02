@@ -485,12 +485,56 @@ textarea {
     .contact-content {
         display: grid;
         grid-template-columns: repeat(2, 1fr); //contacts section is split into two halves; left = map, right = contact form
+        grid-gap: 2rem;
 
         // stylization properties and values for the map
         iframe {
             width: 100%;
             border-radius: 7px;
             height: 100%;
+        }
+
+        .contact-us {
+            text-transform: uppercase;
+            font-size: 1.5rem;
+            margin-bottom: .5rem;
+        }
+
+        .c-text {
+            margin-bottom: 3rem;
+        }
+
+        .form {
+            .input-container {
+                position: relative; // Keeps the label within the input container
+                margin: 2rem 0;
+
+                input,
+                textarea {
+                    width: 100%;
+                    font-family: inherit;
+                    font-size: inherit;
+                    padding: .5rem 1rem;
+                    border: 1px solid var(--color-grey-1);
+                    background-color: var(--color-grey-0);
+                    outline: none;
+                    resize: none; // Prevents resizing when browser window size is manipulated
+                    border-radius: 7px;
+                }
+
+                label {
+                    position: absolute;
+                    left: 25px;
+                    top: -16px;
+                    background-color: var(--color-grey-0);
+                    padding: .1rem .4rem;
+                    border-radius: 7px;
+                }
+            }
+
+            button {
+                cursor: pointer;
+            }
         }
     }
 }
