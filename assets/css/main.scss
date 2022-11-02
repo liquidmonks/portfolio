@@ -479,6 +479,15 @@ textarea {
     }
 }
 
+// stylization properties and values for contacts section
+
+.sec-contact {
+    .contact-content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); //contacts section is split into two halves; left = map, right = contact form
+    }
+}
+
 // about us section
 .main-title {
     // styling parameters for about section chunks

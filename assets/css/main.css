@@ -330,6 +330,11 @@ textarea {
   transform: translate(-50%, -50%) scale(1);
 }
 
+.sec-contact .contact-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
 .main-title {
   text-align: center;
   margin: 3rem 0;
