@@ -704,6 +704,17 @@ body::-webkit-scrollbar-thumb:hover {
     }
 }
 
+// clickable "load more" link to expand page to load additional projects
+.see-more {
+    display: inline-block;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--color-green-dark);
+    width: 100%;
+    margin-top: 3rem;
+}
+
 // Media Queries to make the website responsive
 @media screen and (max-width: 1405px) {
     .sidebar {
@@ -808,7 +819,7 @@ body::-webkit-scrollbar-thumb:hover {
 
             .left-projects {
                 .p-title {
-                    margin-bottom: 3rem; // reduces padding between the title and projects image
+                    margin-bottom: 2rem; // reduces padding between the title and projects image
                 }
             }
         }
