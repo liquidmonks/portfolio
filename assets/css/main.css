@@ -16,6 +16,8 @@ html {
   --color-background: #fbfbfd;
   --color-green-dark: #27ae60;
   --color-green-light: #6bbe92;
+  --color-orange-dark: #FF8C00;
+  --color-orange-light: #FFA500;
   --color-primary: #0d0d0d;
   --color-grey-0: #f8f8f8;
   --color-grey-1: #dbe1e8;
@@ -135,7 +137,7 @@ body::-webkit-scrollbar-thumb:hover {
 .sidebar .navigation .logo a {
   letter-spacing: 3px;
   font-size: 3rem;
-  color: var(--color-grey-5);
+  color: var(--color-orange-dark);
   font-weight: 800;
   transition: var(--trans);
   text-transform: uppercase;
@@ -157,7 +159,7 @@ body::-webkit-scrollbar-thumb:hover {
   align-items: center;
 }
 .sidebar .navigation .nav-items .nav-item a:hover {
-  color: var(--color-green-light);
+  color: var(--color-orange-light);
   letter-spacing: 3px;
 }
 
@@ -261,7 +263,7 @@ body::-webkit-scrollbar-thumb:hover {
   font-size: 3.5rem;
 }
 .sec-about .about-content .right-about h4 span {
-  color: var(--color-green-dark);
+  color: var(--color-orange-dark);
   position: relative;
 }
 .sec-about .about-content .right-about p {
@@ -300,7 +302,7 @@ body::-webkit-scrollbar-thumb:hover {
 .sec-projects .projects-content .projects .project .text h5 {
   letter-spacing: 3px;
   font-size: 2rem;
-  background-color: var(--color-green-dark);
+  background-color: var(--color-orange-dark);
   padding: 0.2rem 0.4rem;
   border-radius: 7px;
   color: var(--color-white);
@@ -429,7 +431,7 @@ body::-webkit-scrollbar-thumb:hover {
   transition: var(--trans);
 }
 .sec-news .news-content .news-item .news-text .text-content .bottom a:hover {
-  color: var(--color-green-dark);
+  color: var(--color-orange-dark);
 }
 .sec-news .news-content .news-item:hover .news-text {
   transform: translate(-50%, -50%) scale(1);
@@ -488,6 +490,7 @@ body::-webkit-scrollbar-thumb:hover {
 .main-title h3 {
   font-size: 2.5rem;
   text-transform: uppercase;
+  color: var(--color-orange-light);
 }
 .main-title span {
   text-align: center;
@@ -555,7 +558,7 @@ body::-webkit-scrollbar-thumb:hover {
   transition: var(--trans);
 }
 .btn:hover {
-  background-color: var(--color-green-dark);
+  background-color: var(--color-orange-dark);
 }
 
 .see-more {
@@ -563,7 +566,7 @@ body::-webkit-scrollbar-thumb:hover {
   text-align: center;
   font-size: 2.5rem;
   font-weight: 700;
-  color: var(--color-green-dark);
+  color: var(--color-orange-dark);
   width: 100%;
   margin-top: 3rem;
 }

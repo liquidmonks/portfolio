@@ -12,7 +12,6 @@ html {
 }
 
 /* variable set */
-
 // variable properties for colors to be used through page styling
 :root {
     // color sets for styling sections through the website
@@ -21,6 +20,8 @@ html {
     --color-background: #fbfbfd;
     --color-green-dark: #27ae60;
     --color-green-light: #6bbe92;
+    --color-orange-dark: #FF8C00;
+    --color-orange-light: #FFA500;
     --color-primary: #0d0d0d;
     --color-grey-0: #f8f8f8;
     --color-grey-1: #dbe1e8;
@@ -147,7 +148,7 @@ body::-webkit-scrollbar-thumb:hover {
             a {
                 letter-spacing: 3px;
                 font-size: 3rem;
-                color: var(--color-grey-5);
+                color: var(--color-orange-dark);
                 font-weight: 800;
                 // transition effect for text logo in sidebar
                 transition: var(--trans);
@@ -181,7 +182,7 @@ body::-webkit-scrollbar-thumb:hover {
 
                     &:hover {
                         // text colors change when user hovers over menu
-                        color: var(--color-green-light);
+                        color: var(--color-orange-light);
                         // letters flex when user hovers over menu
                         letter-spacing: 3px;
                     }
@@ -312,7 +313,7 @@ body::-webkit-scrollbar-thumb:hover {
 
                 // stylization properties for the span tag - adds colors to part of the h4 header title
                 span {
-                    color: var(--color-green-dark);
+                    color: var(--color-orange-dark);
                     position: relative;
                 }
             }
@@ -366,7 +367,7 @@ body::-webkit-scrollbar-thumb:hover {
                     h5 {
                         letter-spacing: 3px;
                         font-size: 2rem;
-                        background-color: var(--color-green-dark);
+                        background-color: var(--color-orange-dark);
                         padding: .2rem .4rem;
                         border-radius: 7px;
                         color: var(--color-white);
@@ -542,7 +543,7 @@ body::-webkit-scrollbar-thumb:hover {
                             transition: var(--trans);
 
                             &:hover {
-                                color: var(--color-green-dark);
+                                color: var(--color-orange-dark);
                             }
                         }
                     }
@@ -629,6 +630,7 @@ body::-webkit-scrollbar-thumb:hover {
     h3 {
         font-size: 2.5rem;
         text-transform: uppercase;
+        color: var(--color-orange-light);
     }
 
     span {
@@ -700,7 +702,7 @@ body::-webkit-scrollbar-thumb:hover {
 
     // mouse hover transition effect
     &:hover {
-        background-color: var(--color-green-dark);
+        background-color: var(--color-orange-dark);
     }
 }
 
@@ -710,7 +712,7 @@ body::-webkit-scrollbar-thumb:hover {
     text-align: center;
     font-size: 2.5rem;
     font-weight: 700;
-    color: var(--color-green-dark);
+    color: var(--color-orange-dark);
     width: 100%;
     margin-top: 3rem;
 }
