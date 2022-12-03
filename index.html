@@ -6,381 +6,345 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Liquid Monks</title>
-    <!-- link to main.css styling sheet -->
-    <link rel="stylesheet" href="./assets/css/main.css">
-    <!-- Font pulls styling properties from fontawesome.com -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
-        rel="stylesheet">
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./assets/css/main.css">
 </head>
 
 <body>
-    <!-- Primary sidebar section for website -->
-    <!-- TODO: Add CSS hamburger menu for mobile - https://codepen.io/alvarotrigo/pen/RwLGjKq -->
-    <section class="sidebar">
-        <nav class="navigation">
-            <div class="logo">
-                <a href="index.html">Liquid Monks</a>
+
+    <nav class="flex items-center justify-between flex-wrap p-6 sticky top-0 left-0 w-full z-10">
+        <div class="flex items-center flex-shrink-0 text-white mr-6">
+            <span class="font-semibold text-xl tracking-tight text-orange-500">Liquid Monks</span>
+        </div>
+        <div class="block md:hidden" id="menu-btn">
+            <button
+                class="flex items-center px-3 py-2 border rounded text-orange-500 border-orange-500 hover:border-white">
+                <i class="fa fa-bars"></i>
+            </button>
+        </div>
+        <div class="w-full block flex-grow lg:flex lg:items-center md:w-auto" id="menu">
+            <div class="text-sm lg:flex-grow">
+                <ul class="nav-items ml-auto text-left md:text-right">
+                    <li class="block md:my-0 my-3 md:inline-block">
+                        <a href="#home" id="main-search-link"
+                            class="block lg:inline-block lg:mt-0 text-orange-500 px-3 font-medium">HOME</a>
+                    </li>
+                    <li class="block md:my-0 my-3 md:inline-block">
+                        <a href="#about" id="saved-link"
+                            class="block lg:inline-block lg:mt-0 text-orange-500 px-3 font-medium">ABOUT</a>
+                    </li>
+                    <li class="block md:my-0 my-3 md:inline-block">
+                        <a href="#projects" id="ing-search-link"
+                            class="block lg:inline-block lg:mt-0 text-orange-500 px-3 font-medium">PROJECTS</a>
+                    </li>
+                    <li class="block md:my-0 my-3 md:inline-block">
+                        <a href="#services" id="ing-search-link"
+                            class="block lg:inline-block lg:mt-0 text-orange-500 px-3 font-medium">SERVICES</a>
+                    </li>
+                    <li class="block md:my-0 my-3 md:inline-block">
+                        <a href="#news" id="ing-search-link"
+                            class="block lg:inline-block lg:mt-0 text-orange-500 px-3 font-medium">NEWS</a>
+                    </li>
+                    <li class="block md:my-0 my-3 md:inline-block">
+                        <a href="#contact" id="ing-search-link"
+                            class="block lg:inline-block lg:mt-0 text-orange-500 px-3 font-medium">CONTACT</a>
+                    </li>
+                </ul>
             </div>
-            <!-- Unordered list of primary menus appears on left side of home page -->
-            <ul class="nav-items">
-                <!-- menu icons inherits fontawesome.com icon styling properties with span to hide the nav item text for media queries-->
-                <li class="nav-item">
-                    <a href="#home"><i class="fa-solid fa-house"></i><span>Home</span></a>
-                </li>
-                <li class="nav-item">
-                    <a href="#about"><i class="fa-solid fa-user"></i><span>About</span></a>
-                </li>
-                <li class="nav-item">
-                    <a href="#projects"><i class="fa-solid fa-folder-open"></i><span>Projects</span></a>
-                </li>
-                <li class="nav-item">
-                    <a href="#services"><i class="fa-solid fa-code"></i></i><span>Services</span></a>
-                </li>
-                <li class="nav-item">
-                    <a href="#news"><i class="fa-solid fa-newspaper"></i><span>News</span></a>
-                </li>
-                <li class="nav-item">
-                    <a href="#contact"><i class="fa-solid fa-address-book"></i><span>Contact</span></a>
-                </li>
-            </ul>
-            <footer>
-                <!-- &copy inserts copyright symbol into the footer -->
-                <p>&copy; 2022 Liquid Monks</p>
-            </footer>
-        </nav>
-    </section>
-    <!-- Primary section for website -->
+        </div>
+    </nav>
     <main>
-        <!-- Class name for header = header -->
-        <header class="header" id="home">
-            <div class="header-content">
-                <!-- Text class inside of header -->
-                <div class="h-text">
-                    <h2>
-                        Inspiring Next Generation Tech Needs for Business
-                    </h2>
-                    <p>
-                        Our mission is to make your business better through technology
-                    </p>
-                </div>
-                <!-- Image class inside of header -->
-                <div class="h-image">
-                    <img src="assets/images/Liquid Monks Banner (5000 x 5000).png" alt="Liquid Monks">
-                </div>
-
-            </div>
-            <!-- Mouse with scrolling wheel effect -->
-            <div class="mouse">
-                <div class="dot"></div>
-            </div>
-
-        </header>
-        <!-- About section -->
-        <section class="section sec-about" id="about">
-            <div class="main-title">
-                <span>Company Profile</span>
-                <h3>About Us</h3>
-            </div>
-            <!-- The content area consist of two columns for image and text -->
-            <div class="about-content">
-                <div class="left-about">
-                    <img src="./assets/images/Liquid Monks Profile (512 x 512).png" alt="Liquid Monks Logo">
-                </div>
-                <div class="right-about">
-                    <!-- Text components have span tag to style the text with different colors -->
-                    <h4><span>We are</span> Liquid Monks</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio eum sint quia, illum temporibus
-                        tempora doloribus hic quo vero deleniti cumque ad assumenda mollitia ut!</p>
-                    <!-- clickable button a tag to send user to a link or additional page -->
-                    <a href="#" class="btn btn-main">Click for more...</a>
-                </div>
-            </div>
-        </section>
-        <!-- Projects section -->
-        <section class="section sec-projects" id="projects">
-            <div class="main-title">
-                <span>Recent Projects</span>
-                <h3>Our Portfolio</h3>
-            </div>
-            <div class="projects-content">
-                <!-- Project content area includes two columns -->
-                <div class="left-projects">
-                    <h4 class="p-title">Portfolio</h4>
-                    <div class="projects">
-                        <!-- Individual projects list -->
-                        <div class="project">
-                            <!-- Github project - HoriSEO Site Development -->
-                            <img src="./assets/images/horiseo.jpg"
-                                alt="HorSEO Site Development Project by Liquid Monks">
-                            <div class="text">
-                                <h5>HoriSEO</h5>
-                                <p>HoriSEO Website Development</p>
-                                <a href="https://liquidmonks.github.io/challenge-1/" class="btn project-btn">View
-                                    Project</a>
-                            </div>
-
-                        </div>
-                        <div class="project">
-                            <!-- Github project - Password Generator Javascript Project-->
-                            <img src="./assets/images/placeholderimg6005x448.png"
-                                alt="Password Generator JS by Liquid Monks">
-                            <div class="text">
-                                <h5>Password Generator</h5>
-                                <p>Interactive Password Generator</p>
-                                <a href="https://liquidmonks.github.io/passwordgenerator/" class="btn project-btn">View
-                                    Project</a>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="right-projects">
-                    <div class="projects">
-                        <!-- Individual projects list -->
-                        <div class="project">
-                            <!-- Github project - HoriSEO Site Development -->
-                            <img src="./assets/images/placeholderimg6005x448.png"
-                                alt="Unfinished Project by Liquid Monks">
-                            <div class="text">
-                                <h5>Unfinished Project</h5>
-                                <p>Project Under Development</p>
-                                <a href="https://liquidmonks.github.io/" class="btn project-btn">View
-                                    Project</a>
-                            </div>
-
-                        </div>
-                        <div class="project">
-                            <!-- Github project - Password Generator Javascript Project-->
-                            <img src="./assets/images/placeholderimg6005x448.png"
-                                alt="Unfinished Project by Liquid Monks">
-                            <div class="text">
-                                <h5>Unfinished Project</h5>
-                                <p>Project Under Developement</p>
-                                <a href="https://liquidmonks.github.io/" class="btn project-btn">View
-                                    Project</a>
-                            </div>
-
+        <div class="container lg:px-20 px-0 py-20 mx-auto" id="home">
+            <div class="hero">
+                <h1 class="text-center text-4xl font-bold">
+                    Inspiring Next Generation Tech Needs for Business
+                </h1>
+                <p class="text-center text-xl font-medium mt-10">Our mission is to make your business better through
+                    technology</p>
+                <div class="hero-img text-center">
+                    <img src="assets/images/Liquid Monks Banner (5000 x 5000).png" alt="Logo">
+                    <div class="text-center">
+                        <div class="mouse">
+                            <div class="dot"></div>
                         </div>
                     </div>
                 </div>
             </div>
-            <a href="#" class="see-more">Load More...</a>
-        </section>
-
-        <!-- Services section -->
-        <section class="section sec-services" id="services">
-            <div class="main-title">
-                <span>What We Offer</span>
-                <h3>Our Services</h3>
-            </div>
-            <!-- General service class -->
-            <div class="services">
-                <!-- Service items -->
-                <div class="service">
-                    <!-- Content within the individual service -->
-                    <div class="s-content">
-                        <!-- icon image for the individual service -->
-                        <div class="icon">
-                            <i class="fa-solid fa-laptop-code"></i>
-                        </div>
-                        <!-- Title for the individual service -->
-                        <h5>Web Development</h5>
-                        <!-- Description for the service -->
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, necessitatibus!
+            <div class="about py-20" id="about">
+                <div class="text-center mb-20">
+                    <h4 class="subtitle text-xl mb-5">Company Profile</h4>
+                    <h1 class="text-4xl font-bold title text-orange-400">ABOUT US</h1>
+                </div>
+                <div class="flex flex-wrap">
+                    <div class="w-full md:w-1/2 px-5 greyscale">
+                        <img src="assets/images/Liquid Monks Profile (512 x 512).png" alt="">
+                    </div>
+                    <div class="w-full md:w-1/2 px-5">
+                        <h1 class="text-6xl font-bold"><span class="text-orange-500">We are</span> Liquid Monks</h1>
+                        <p class="my-10">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio eum sint quia,
+                            illum temporibus tempora doloribus hic quo vero deleniti cumque ad assumenda mollitia ut!
                         </p>
+                        <a href="#" class="py-4 px-8 text-xl font-semibold rounded btn-lg">Click for more...</a>
                     </div>
                 </div>
-                <div class="service">
-                    <!-- Content within the individual service -->
-                    <div class="s-content">
-                        <!-- icon image for the individual service -->
-                        <div class="icon">
-                            <i class="fa-solid fa-laptop"></i>
-                        </div>
-                        <!-- Title for the individual service -->
-                        <h5>Web Design</h5>
-                        <!-- Description for the service -->
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, necessitatibus!
-                        </p>
-                    </div>
-                </div>
-
-                <div class="service">
-                    <!-- Content within the individual service -->
-                    <div class="s-content">
-                        <!-- icon image for the individual service -->
-                        <div class="icon">
-                            <i class="fa-solid fa-mobile"></i>
-                        </div>
-                        <!-- Title for the individual service -->
-                        <h5>Mobile Design</h5>
-                        <!-- Description for the service -->
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, necessitatibus!
-                        </p>
-                    </div>
-                </div>
-
-                <div class="service">
-                    <!-- Content within the individual service -->
-                    <div class="s-content">
-                        <!-- icon image for the individual service -->
-                        <div class="icon">
-                            <i class="fa-solid fa-gamepad"></i>
-                        </div>
-                        <!-- Title for the individual service -->
-                        <h5>Game Development</h5>
-                        <!-- Description for the service -->
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, necessitatibus!
-                        </p>
-                    </div>
-                </div>
-
-                <div class="service">
-                    <!-- Content within the individual service -->
-                    <div class="s-content">
-                        <!-- icon image for the individual service -->
-                        <div class="icon">
-                            <i class="fa-solid fa-bug"></i>
-                        </div>
-                        <!-- Title for the individual service -->
-                        <h5>Software Debugging</h5>
-                        <!-- Description for the service -->
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, necessitatibus!
-                        </p>
-                    </div>
-                </div>
-
-                <div class="service">
-                    <!-- Content within the individual service -->
-                    <div class="s-content">
-                        <!-- icon image for the individual service -->
-                        <div class="icon">
-                            <i class="fa-solid fa-headset"></i>
-                        </div>
-                        <!-- Title for the individual service -->
-                        <h5>Tech Support</h5>
-                        <!-- Description for the service -->
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, necessitatibus!
-                        </p>
-                    </div>
-                </div>
-
             </div>
-        </section>
 
-        <!-- News section -->
-        <section class="section sec-news" id="news">
-            <div class="main-title">
-                <span>News You Can Use</span>
-                <h3>What's New?</h3>
-            </div>
-            <div class="news-content">
-                <div class="news-item">
-                    <div class="news-text">
-                        <div class="text-content">
-                            <div class="top">
-                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            <div class="projects py-20" id="projects">
+                <div class="text-center mb-20">
+                    <h4 class="subtitle text-xl mb-5">Recent Projects</h4>
+                    <h1 class="text-4xl font-bold title text-orange-400">OUR PORTFOLIO</h1>
+                </div>
+                <div class="flex flex-wrap">
+                    <div class="w-full md:w-1/2 px-5">
+                        <h1 class="text-5xl font-bold title mb-20">Portfolio</h1>
+                        <div class="project relative mb-10 rounded overflow-hidden">
+                            <img src="assets/images/placeholderimg6005x448.png" alt="Project Image">
+                            <div class="project-text absolute left-5 bottom-5">
+                                <h2 class="p-title text-3xl font-bold bg-orange-500 rounded p-2 inline-block">Password
+                                    Generator</h2>
+                                <p class="my-2">Interactive Password Generator</p>
+                                <div class="inline-block border-bottom">
+                                    <a href="#" class="btn-view px-5 py-4 inline-block mb-3">View Project</a>
+                                </div>
                             </div>
-                            <div class="bottom">
-                                <p>Month, Day, Year</p>
-                                <a href="https://techcrunch.com/">TechCrunch</a>
+                        </div>
+
+                        <div class="project relative mb-10 rounded overflow-hidden">
+                            <img src="assets/images/placeholderimg6005x448.png" alt="Project Image">
+                            <div class="project-text absolute left-5 bottom-5">
+                                <h2 class="p-title text-3xl font-bold bg-orange-500 rounded p-2 inline-block">Password
+                                    Generator</h2>
+                                <p class="my-2">Interactive Password Generator</p>
+                                <div class="inline-block border-bottom">
+                                    <a href="#" class="btn-view px-5 py-4 inline-block mb-3">View Project</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <img src="https://images.cdn2.stockunlimited.net/clipart450/news-icon_1612164.jpg"
-                        alt="Tech News Image">
-                </div>
 
-                <div class="news-item">
-                    <div class="news-text">
-                        <div class="text-content">
-                            <div class="top">
-                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    <div class="w-full md:w-1/2 px-5">
+                        <div class="project relative mb-10 rounded overflow-hidden">
+                            <img src="assets/images/placeholderimg6005x448.png" alt="Project Image">
+                            <div class="project-text absolute left-5 bottom-5">
+                                <h2 class="p-title text-3xl font-bold bg-orange-500 rounded p-2 inline-block">Password
+                                    Generator</h2>
+                                <p class="my-2">Interactive Password Generator</p>
+                                <div class="inline-block border-bottom">
+                                    <a href="#" class="btn-view px-5 py-4 inline-block mb-3">View Project</a>
+                                </div>
                             </div>
-                            <div class="bottom">
-                                <p>Month, Day, Year</p>
-                                <a href="https://www.androidauthority.com/">Android Authority</a>
+                        </div>
+
+                        <div class="project relative mb-10 rounded overflow-hidden">
+                            <img src="assets/images/placeholderimg6005x448.png" alt="Project Image">
+                            <div class="project-text absolute left-5 bottom-5">
+                                <h2 class="p-title text-3xl font-bold bg-orange-500 rounded p-2 inline-block">Password
+                                    Generator</h2>
+                                <p class="my-2">Interactive Password Generator</p>
+                                <div class="inline-block border-bottom">
+                                    <a href="#" class="btn-view px-5 py-4 inline-block mb-3">View Project</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <img src="https://images.cdn2.stockunlimited.net/clipart450/news-icon_1612164.jpg"
-                        alt="Tech News Image">
+                    <div class="w-full text-center">
+                        <a href="#" class="px-5 text-4xl text-orange-400 py-4 inline-block mb-3 font-bold">Load
+                            More...</a>
+                    </div>
                 </div>
+            </div>
 
-                <div class="news-item">
-                    <div class="news-text">
-                        <div class="text-content">
-                            <div class="top">
-                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            <div class="services py-20" id="services">
+                <div class="text-center mb-20">
+                    <h4 class="subtitle text-xl mb-5">What We Offer</h4>
+                    <h1 class="text-4xl font-bold title text-orange-400">OUR SERVICES</h1>
+                </div>
+                <div class="flex flex-wrap">
+                    <div class="w-full lg:w-4/12 md:1/2 px-5 mb-10">
+                        <div
+                            class="service bg-white-900 p-5 h-full py-6 rounded flex flex-col justify-center items-center">
+                            <div class="icon flex flex-col justify-center items-center text-5xl">
+                                <i class="fa fa-laptop-code"></i>
                             </div>
-                            <div class="bottom">
-                                <p>Month, Day, Year</p>
-                                <a href="https://venturebeat.com/">VentureBeat</a>
+                            <h1 class="text-center text-2xl font-bold my-5">Web Development</h1>
+                            <p class="font-medium text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                Harum, quisquam itaque. </p>
+                        </div>
+                    </div>
+                    <div class="w-full lg:w-4/12 md:1/2 px-4 mb-10">
+                        <div
+                            class="service bg-white-900 p-7 h-full py-6 rounded flex flex-col justify-center items-center">
+                            <div class="icon flex flex-col justify-center items-center text-5xl">
+                                <i class="fa fa-laptop"></i>
+                            </div>
+                            <h1 class="text-center text-2xl font-bold my-5">Web Design</h1>
+                            <p class="font-medium text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                Harum, quisquam itaque. </p>
+                        </div>
+                    </div>
+                    <div class="w-full lg:w-4/12 md:1/2 px-4 mb-10">
+                        <div
+                            class="service bg-white-900 p-7 h-full py-6 rounded flex flex-col justify-center items-center">
+                            <div class="icon flex flex-col justify-center items-center text-5xl">
+                                <i class="fa fa-mobile"></i>
+                            </div>
+                            <h1 class="text-center text-2xl font-bold my-5">Mobile Design</h1>
+                            <p class="font-medium text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                Harum, quisquam itaque. </p>
+                        </div>
+                    </div>
+                    <div class="w-full lg:w-4/12 md:1/2 px-4 mb-10">
+                        <div
+                            class="service bg-white-900 p-7 h-full py-6 rounded flex flex-col justify-center items-center">
+                            <div class="icon flex flex-col justify-center items-center text-5xl">
+                                <i class="fa fa-gamepad"></i>
+                            </div>
+                            <h1 class="text-center text-2xl font-bold my-5">Game Development</h1>
+                            <p class="font-medium text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                Harum, quisquam itaque. </p>
+                        </div>
+                    </div>
+                    <div class="w-full lg:w-4/12 md:1/2 px-4 mb-10">
+                        <div
+                            class="service bg-white-900 p-7 h-full py-6 rounded flex flex-col justify-center items-center">
+                            <div class="icon flex flex-col justify-center items-center text-5xl">
+                                <i class="fa fa-bug"></i>
+                            </div>
+                            <h1 class="text-center text-2xl font-bold my-5">Software Debugging</h1>
+                            <p class="font-medium text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                Harum, quisquam itaque. </p>
+                        </div>
+                    </div>
+                    <div class="w-full lg:w-4/12 md:1/2 px-4 mb-10">
+                        <div
+                            class="service bg-white-900 p-7 h-full py-6 rounded flex flex-col justify-center items-center">
+                            <div class="icon flex flex-col justify-center items-center text-5xl">
+                                <i class="fa fa-headset"></i>
+                            </div>
+                            <h1 class="text-center text-2xl font-bold my-5">Tech Support</h1>
+                            <p class="font-medium text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                Harum, quisquam itaque. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="news-sec py-20" id="news">
+                <div class="text-center mb-20">
+                    <h4 class="subtitle text-xl mb-5">News You Can Use</h4>
+                    <h1 class="text-4xl font-bold title text-orange-400">WHAT'S NEW</h1>
+                </div>
+                <div class="flex flex-wrap">
+                    <div class="w-full lg:w-4/12 md:w-1/2 px-5 mb-10">
+                        <div class="news relative rounded overflow-hidden">
+                            <img src="assets/images/news-icon.jpg" alt="News" class="w-full">
+                            <div class="news-text">
+                                <div class="absolute left-3 bottom-3">
+                                    <p class="text-lg font-medium">
+                                        Month, Day, Year
+                                    </p>
+                                    <a href="#" class="text-2xl font-bold hover:text-orange-500">
+                                        Android Authority
+                                    </a>
+
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <img src="https://images.cdn2.stockunlimited.net/clipart450/news-icon_1612164.jpg"
-                        alt="Tech News Image">
+                    <div class="w-full lg:w-4/12 md:w-1/2 px-5 mb-10">
+                        <div class="news relative rounded overflow-hidden">
+                            <img src="assets/images/news-icon.jpg" alt="News" class="w-full">
+                            <div class="news-text">
+                                <div class="absolute left-3 bottom-3">
+                                    <p class="text-lg font-medium">
+                                        Month, Day, Year
+                                    </p>
+                                    <a href="#" class="text-2xl font-bold hover:text-orange-500">
+                                        Android Authority
+                                    </a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full lg:w-4/12 md:w-1/2 px-5 mb-10">
+                        <div class="news relative rounded overflow-hidden">
+                            <img src="./assets/images/news-icon.jpg" alt="News" class="w-full">
+                            <div class="news-text">
+                                <div class="absolute left-3 bottom-3">
+                                    <p class="text-lg font-medium">
+                                        Month, Day, Year
+                                    </p>
+                                    <a href="#" class="text-2xl font-bold hover:text-orange-500">
+                                        Android Authority
+                                    </a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-
-
             </div>
-        </section>
 
-        <!-- Contacts section -->
-        <section class="section sec-contact" id="contact">
-            <div class="main-title">
-                <span>We Want to Hear From You</span>
-                <h3>Contact Us</h3>
-            </div>
-            <div class="contact-content">
-                <!-- Embed map from Google Maps - does not include width and heigh properties -->
-                <div class="map">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2969.955161645941!2d-87.62980958411342!3d41.893821379221!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2ded62266bdf%3A0x1d82cbde6cbab11e!2sLiquid%20Monks!5e0!3m2!1sen!2sus!4v1667408399337!5m2!1sen!2sus"
-                        style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="contact py-20" id="contact">
+                <div class="text-center mb-20">
+                    <h4 class="subtitle text-xl mb-5">We Want to Hear From You</h4>
+                    <h1 class="text-4xl font-bold title text-orange-400">CONTACT US</h1>
                 </div>
-                <!-- Input form with no action properties located on right-half of the contacts area -->
-                <form class="form">
-                    <h3 class="contact-us">Send us a message</h3>
-                    <p class="c-text">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, expedita?
-                    </p>
-                    <div class="input-container">
-                        <label for="name">Enter Your Name</label>
-                        <input type="text" name="name" id="name">
+                <div class="flex flex-wrap">
+                    <div class="w-full md:w-1/2 px-5 mb-10">
+                        <iframe class="h-full w-full"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2969.955161645941!2d-87.62980958411342!3d41.893821379221!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2ded62266bdf%3A0x1d82cbde6cbab11e!2sLiquid%20Monks!5e0!3m2!1sen!2sus!4v1667408399337!5m2!1sen!2sus"
+                            style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
-                    <div class="input-container">
-                        <label for="email">Enter Your Email</label>
-                        <input type="text" name="email" id="email">
+                    <div class="w-full md:w-1/2 px-5 mb-10">
+                        <h2 class="text-2xl font-bold">SEND US A MESSAGE</h2>
+                        <p class="my-5 text-normal font-medium">Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. Blanditiis, expedita?</p>
+                        <div class="form">
+                            <form action="" method="post">
+                                <div class="form-group py-4 relative">
+                                    <label class="absolute left-3 top-1">Enter Your Name:</label>
+                                    <input type="text" class="w-full p-3 text-lg rounded input">
+                                </div>
+                                <div class="form-group py-4 relative">
+                                    <label class="absolute left-3 top-1">Enter Your Email:</label>
+                                    <input type="text" class="w-full p-3 text-lg rounded input">
+                                </div>
+                                <div class="form-group py-4 relative">
+                                    <label class="absolute left-3 top-1">Enter Your Subject:</label>
+                                    <input type="text" class="w-full p-3 text-lg rounded input">
+                                </div>
+                                <div class="form-group py-4 relative">
+                                    <label class="absolute left-3 top-1">Enter Your Message:</label>
+                                    <textarea type="text" class="w-full p-3 text-lg rounded input" rows="5"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit"
+                                        class="py-4 px-8 text-xl font-semibold rounded btn-lg">Submit</button>
+                                </div>
+                            </form>
+                        </div>
                     </div>
-                    <div class="input-container">
-                        <label for="subject">Enter Your Subject</label>
-                        <input type="text" name="subject" id="subject">
-                    </div>
-                    <div class="input-container">
-                        <label for="textarea">Message</label>
-                        <textarea name="textarea" id="textarea" cols="30" rows="6"></textarea>
-                    </div>
-                    <!-- Submit button inherits button attributes -->
-                    <button type="submit" class="btn btn-submit">Send Message</button>
-                </form>
+                </div>
             </div>
-        </section>
-
+        </div>
     </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        let button = $('#menu-btn'); // Hamburger Icon
+        let menu = $('#menu'); // Menu
+
+        button.click(function () {
+            menu.slideToggle();
+        });
+    </script>
 </body>
 
 </html>
