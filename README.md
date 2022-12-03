@@ -11,7 +11,7 @@ Web developer and designer portfolio website
 
 
 ## 🔗 Click to Launch Live Site Link
-[![Live Site](https://img.shields.io/badge/livesite-click-orange)](https://github.com/liquidmonks/portfolio/blob/main/index.html)
+[![Live Site](https://img.shields.io/badge/livesite-click-orange)](https://liquidmonks.github.io/portfolio/)
 
 ## Tech Stack
 
